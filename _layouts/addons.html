@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Add-ons"
+---
+<div class="grid-container">
+  {% for addon in site.addons %}
+  <div class="grid-item">
+    <h3>{{ addon.title }}</h3>
+    <p>{{ addon.description }}</p>
+    <a href="{{ addon.github_repo }}" target="_blank">View on GitHub</a>
+  </div>
+  {% endfor %}
+</div>
