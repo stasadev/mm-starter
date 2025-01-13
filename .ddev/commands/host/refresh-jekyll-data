@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-## Description: Refresh JSON data for Jekyll
-## Usage: refresh-jekyll-data
-## Example: ddev refresh-jekyll-data
-
-ddev exec curl -o _data/all.json https://stasadev.github.io/mm-starter/all.json
-ddev exec curl -o _data/official.json https://stasadev.github.io/mm-starter/official.json
-ddev exec curl -o _data/third-party.json https://stasadev.github.io/mm-starter/third-party.json

@@ -1,27 +1,14 @@
-# Minimal Mistakes remote theme starter
+[![Deploy to GitHub Pages](https://github.com/stasadev/mm-starter/actions/workflows/deploy-to-github-pages.yml/badge.svg)](https://stasadev.github.io/mm-starter/)
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+# DDEV Add-on Registry
 
-Contains basic configuration to get you a site with:
+A registry for DDEV add-ons where users can discover, explore, and leave comments on available add-ons.
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+- [Jekyll](https://jekyllrb.com/) is used under the hood to generate the site.
+- TODO: DDEV add-ons are updated on daily basis.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+# Local usage
 
----
-
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+1. `ddev start`
+2. `ddev logs -s jekyll -f` (wait until the server is ready)
+3. `ddev launch :4000/mm-starter/`

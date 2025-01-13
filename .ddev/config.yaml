@@ -5,9 +5,6 @@ webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
-hooks:
-    post-start:
-        - exec-host: ddev refresh-jekyll-data
 omit_containers: [db]
 use_dns_when_possible: true
 composer_version: "2"
